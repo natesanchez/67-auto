@@ -285,6 +285,11 @@ const countryTexts = [
       "The company does business in Cambodia. Cambodia imposes barriers to trade including arbitrary customs enforcement, restrictions on foreign ownership of property, and widespread smuggling.",
   },
   {
+    country: " Cote d'Ivoire",
+    language:
+      "The company does business in Cote d'Ivoire. Cote d'Ivoire imposes barriers to trade including a lack of regulatory transparency and bans on the import of certain goods.",
+  },
+  {
     country: " China",
     language:
       "The company does business in China. China imposes barriers to trade including forced technology transfer, limited market access, and investment restrictions.",

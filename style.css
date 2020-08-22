@@ -1,9 +1,27 @@
 body {
   display: flex;
   flex-direction: column;
+  background: rgb(245, 245, 245);
 }
 
 input {
   height: 18px;
-  width: 650px;
+  width: 825px;
+}
+
+#score6 {
+  height: 12px;
+  width: 100px;
+  background: rgb(116, 193, 0);
+  /* background: rgb(232, 232, 0); */
+}
+
+#score7 {
+  height: 12px;
+  width: 100px;
+  background: rgb(116, 193, 0);
+}
+
+.buttons {
+  margin: 3.8px;
 }

@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RISE Automation</title>
+    <title>6-7 Auto Gen v2</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="interos.png"
+    <link rel="icon" href="magic.png"
   </head>
   <body>
-    <h1>RISE Automation GOV-6 | GOV-7</h1>
+    <h1>GOV-6 | GOV-7 Auto Gen v2 (DO NOT USE -- **UPDATE IN PROGRESS**)</h1>
     <form>
       <label for="g6">GOV-6 Countries:</label>
       <input type="text" id="g6" name="g6" /><br /><br />
       <label for="g7">GOV-7 Countries:</label>
       <input type="text" id="g7" name="g7" /><br /><br />
-      <input id="button" type="submit" value="Submit" />
+      <input class="buttons" id="button" type="submit" value="Submit" />
+      <input class="buttons" id="reset" type="reset" value="Reset" />
     </form>
     <br />
     <br />
     <br />
-    <br />
     <h3>GOV-6 Output</h3>
-    <p id="gov6">No countries have been submitted!</p>
+    <p id="gov6">
+      [INSERT COI] does not maintain any business operations in countries that
+      are listed on the United States Trade Representative (USTR) Special 301
+      Watch List.
+    </p>
+    <div id="score6"></div>
     <br />
     <h3>GOV-7 Output</h3>
-    <p id="gov7">No countries have been submitted!</p>
+    <p id="gov7">
+      [INSERT COI] does not operate in a country currently listed as imposing
+      significant barriers to trade by the United States Trade Representative.
+    </p>
+    <div id="score7"></div>
     <script src="script.js" type="module"></script>
   </body>
 </html>
