@@ -535,6 +535,15 @@ function runProgram() {
     parseCountries7(y);
     startTextGeneration7();
     gov7P.textContent = final;
+    if (
+      inputedGreen.length === 0 &&
+      inputedYellow.length === 0 &&
+      inputedRed.length === 0
+    ) {
+      score7Div.style.backgroundColor = "green";
+      gov7P.innerHTML =
+        "[INSERT COI] does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
+    }
     inputedCountries = "";
     inputedGreen = [];
     inputedYellow = [];
