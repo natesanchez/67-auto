@@ -7,21 +7,24 @@ body {
 input {
   height: 18px;
   width: 825px;
+  border: 0.5px solid black;
 }
 
 #score6 {
   height: 12px;
   width: 100px;
-  background: rgb(116, 193, 0);
-  /* background: rgb(232, 232, 0); */
+  background: green;
+  border: 1.3px solid black;
 }
 
 #score7 {
   height: 12px;
   width: 100px;
-  background: rgb(116, 193, 0);
+  background: green;
+  border: 1.3px solid black;
 }
 
 .buttons {
   margin: 3.8px;
+  cursor: pointer;
 }
