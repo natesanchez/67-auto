@@ -287,7 +287,7 @@ const watchList = [
   "Bolivia",
   "Brazil",
   "Canada",
-  "Columbia",
+  "Colombia",
   "Dominican Republic",
   "Ecuador",
   "Guatemala",
