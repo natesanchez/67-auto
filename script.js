@@ -159,7 +159,7 @@ function startTextGeneration7() {
 
     let lastCountryGreen = inputedGreen.pop();
     res1 =
-      "[INSERT COI] operates in" +
+      "The company operates in" +
       inputedGreen +
       ", and" +
       lastCountryGreen +
@@ -187,7 +187,7 @@ function startTextGeneration7() {
 
     let lastCountryYellow = inputedYellow.pop();
     res2 =
-      " [INSERT COI] operates in" +
+      " The company operates in" +
       inputedYellow +
       ", and" +
       lastCountryYellow +
@@ -215,7 +215,7 @@ function startTextGeneration7() {
 
     let lastCountryRed = inputedRed.pop();
     res3 =
-      " [INSERT COI] operates in" +
+      " The company operates in" +
       inputedRed +
       ", and" +
       lastCountryRed +
@@ -235,7 +235,7 @@ function startTextGeneration7() {
   // console.log(fixedArr);
   if (res1 === "" && res2 === "" && res3 === "" && fixedArr === null) {
     final =
-      "[INSERT COI] does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
+      "The company does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
   } else {
     final = res1 + res2 + res3 + fixedArr;
   }
@@ -350,7 +350,7 @@ function startTextGeneration6() {
 
       let lastCountry = masterOutput.pop();
       gov6P.innerHTML =
-        "[INSERT COI] maintains business operations in" +
+        "The company maintains business operations in" +
         masterOutput +
         ", and" +
         lastCountry +
@@ -365,7 +365,7 @@ function startTextGeneration6() {
       }
       let lastCountry = masterOutput.pop();
       gov6P.innerHTML =
-        "[INSERT COI] maintains business operations in" +
+        "The company maintains business operations in" +
         masterOutput +
         " and" +
         lastCountry +
@@ -383,7 +383,7 @@ function startTextGeneration6() {
 
     let lastCountry = masterOutput.pop();
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       ", and" +
       lastCountry +
@@ -399,7 +399,7 @@ function startTextGeneration6() {
     }
     let lastCountry = masterOutput.pop();
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       " and" +
       lastCountry +
@@ -414,7 +414,7 @@ function startTextGeneration6() {
       }
     }
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       ", which is listed on the United States Trade Representative (USTR) Special 301 Watch List.";
   } else if (gov6PriorityOutput.length > 2) {
@@ -428,7 +428,7 @@ function startTextGeneration6() {
     }
     let lastCountry = masterOutput.pop();
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       ", and" +
       lastCountry +
@@ -444,7 +444,7 @@ function startTextGeneration6() {
     }
     let lastCountry = masterOutput.pop();
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       " and" +
       lastCountry +
@@ -459,14 +459,14 @@ function startTextGeneration6() {
       }
     }
     gov6P.innerHTML =
-      "[INSERT COI] maintains business operations in" +
+      "The company maintains business operations in" +
       masterOutput +
       ", which is listed on the United States Trade Representative (USTR) Special 301 Priority Watch List.";
   }
   if (masterOutput.length === 0) {
     score6Div.style.backgroundColor = "green";
     gov6P.innerHTML =
-      "[INSERT COI] does not maintain any business operations in countries that are listed on the United States Trade Representative (USTR) Special 301 Watch List.";
+      "The company does not maintain any business operations in countries that are listed on the United States Trade Representative (USTR) Special 301 Watch List.";
   } else if (masterOutput.length > 0) {
     if (yellowTracker.length > 0) {
       score6Div.style.backgroundColor = "rgb(232, 232, 0)";
@@ -508,9 +508,9 @@ function reset() {
   fixedArr = [""];
   final = "";
   gov6P.innerHTML =
-    "[INSERT COI] does not maintain any business operations in countries that are listed on the United States Trade Representative (USTR) Special 301 Watch List.";
+    "The company does not maintain any business operations in countries that are listed on the United States Trade Representative (USTR) Special 301 Watch List.";
   gov7P.innerHTML =
-    "[INSERT COI] does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
+    "The company does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
   score6Div.style.backgroundColor = "green";
   score7Div.style.backgroundColor = "green";
 }
@@ -542,7 +542,7 @@ function runProgram() {
     ) {
       score7Div.style.backgroundColor = "green";
       gov7P.innerHTML =
-        "[INSERT COI] does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
+        "The company does not operate in a country currently listed as imposing significant barriers to trade by the United States Trade Representative.";
     }
     inputedCountries = "";
     inputedGreen = [];
